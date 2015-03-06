@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :events
+
   match "/index" => 'aaa_core#index', via: :get
   match "/shop" => 'aaa_core#shop', via: :get
   match "/discussion" => 'aaa_core#discussion', via: :get
