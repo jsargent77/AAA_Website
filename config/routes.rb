@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :members
   resources :events
 
   match "/index" => 'aaa_core#index', via: :get
