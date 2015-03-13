@@ -7,6 +7,9 @@ gem 'rails', '4.2.0'
 # Add third party authorization Devise
 gem 'devise'
 
+# To fix devise page not found on logout error in heroku
+gem 'rails_12factor', group: :production
+
 group :development do
   gem 'sqlite3'
 #  gem 'rspec-rails', '2.6.1', :require => 'rspec-rails'
